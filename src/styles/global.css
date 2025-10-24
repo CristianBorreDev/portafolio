@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body {
+  background-color: #0a0a0a;
+  color: #eaeaea;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.02em;
+}
+a {
+  transition: color 0.3s ease;
+}
+
+a[href*="zentrixinnovate"] {
+  text-shadow: 0 0 6px rgba(123, 92, 255, 0.6);
+}

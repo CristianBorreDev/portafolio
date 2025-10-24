@@ -1,0 +1,50 @@
+---
+import ProjectCard from "../components/ui/ProjectCard.astro";
+import projects from "../data/projects.json";
+---
+
+<section
+  id="projects"
+  class="min-h-screen bg-gradient-to-b from-[#0a0a0a] via-[#0d0d14] to-[#111122] py-24 px-6 md:px-16 text-[#eaeaea] relative overflow-hidden"
+>
+  <!-- Glow ambiental -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div
+      class="absolute bottom-0 right-0 w-[700px] h-[700px] bg-[#7b5cff]/10 blur-[200px] rounded-full"
+    >
+    </div>
+  </div>
+
+  <div class="max-w-5xl mx-auto relative z-10">
+    <h1 class="text-4xl md:text-5xl font-semibold mb-4 text-center">
+      Mis <span class="text-[#9a85ff]">proyectos</span>
+    </h1>
+    <p class="text-[#a1a1a1] text-center max-w-2xl mx-auto mb-12">
+      Una colección de prototipos, interfaces y experimentos desarrollados desde
+      la curiosidad y el propósito.
+    </p>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {projects.map((proj) => <ProjectCard {...proj} />)}
+    </div>
+
+    <div class="text-center mt-20">
+      <a
+        href="https://cristian-labs.vercel.app"
+        target="_blank"
+        class="inline-block text-[#9a85ff] hover:text-[#b7a2ff] transition-colors duration-300 text-sm tracking-widest border border-[#1f1f1f] hover:border-[#7b5cff]/40 px-6 py-3 rounded-xl bg-[#111111]/50 backdrop-blur-sm hover:bg-[#141418]/70"
+      >
+        → Explorar el laboratorio completo
+      </a>
+
+      <p class="text-[#666] text-xs mt-4 font-mono">
+        Más prototipos, ideas y sistemas en construcción.
+      </p>
+    </div>
+
+    <div class="text-center mt-16 text-sm text-[#7b5cff]/70 font-mono">
+      &gt; loading more prototypes_
+      <span class="animate-pulse text-[#9a85ff]">|</span>
+    </div>
+  </div>
+</section>

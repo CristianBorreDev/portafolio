@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Dashboard UI",
+    "description": "Panel visual que reúne métricas, tarjetas e ilustraciones minimalistas. Exploración de diseño, jerarquía y ritmo visual.",
+    "type": "Diseño",
+    "stack": ["Astro", "TailwindCSS"],
+    "demo": "https://dashboard-ui.vercel.app",
+    "github": "https://github.com/CristianBorreDev/dashboard-ui",
+    "image": "/images/dashboard-ui.webp"
+  },
+  {
+    "title": "Kanban CRUD",
+    "description": "Tablero interactivo para gestionar tareas con drag & drop y persistencia local. Enfoque en interacción fluida y estructura modular.",
+    "type": "Funcionalidad",
+    "stack": ["React", "TailwindCSS", "LocalStorage"],
+    "demo": "https://crud-kanban.vercel.app",
+    "github": "https://github.com/CristianBorreDev/crud-kanban",
+    "image": "/images/crud-kanban.webp"
+  },
+  {
+    "title": "Library System",
+    "description": "Mini sistema de notas y recursos categorizados, pensado como base de un CRM personal o gestor de ideas.",
+    "type": "Demo",
+    "stack": ["React", "Node", "SQLite"],
+    "demo": "https://library-system.vercel.app",
+    "github": "https://github.com/CristianBorreDev/library-system",
+    "image": "/images/library-system.webp"
+  }
+]

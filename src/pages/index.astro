@@ -1,11 +1,64 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import About from "./about.astro";
+import Projects from "./projects.astro";
+import Contact from "./contact.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <section
+    class="relative flex flex-col items-center justify-center text-center h-screen bg-gradient-to-b from-[#0a0a0a] via-[#0d0d14] to-[#111122] text-[#eaeaea] overflow-hidden"
+  >
+    <!-- Glow de fondo sutil -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div
+        class="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#7b5cff]/20 blur-[150px] rounded-full"
+      >
+      </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="relative z-10 px-6 md:px-12">
+      <p class="text-sm md:text-base tracking-widest text-[#9a85ff]/80 mb-4">
+        ~/cristian
+      </p>
+
+      <h1 class="text-4xl md:text-6xl font-semibold mb-4">
+        Construyo en silencio<br />
+        <span class="text-[#9a85ff]">lo que después brilla con claridad.</span>
+      </h1>
+
+      <p
+        class="max-w-xl mx-auto text-[#a1a1a1] text-sm md:text-base leading-relaxed mb-8"
+      >
+        Desarrollador Web y creador digital. Exploro interfaces, sistemas
+        y experiencias que conectan estética con propósito.
+      </p>
+
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a
+          href="#projects"
+          class="px-6 py-3 rounded-full bg-[#7b5cff] text-[#eaeaea] text-sm font-medium hover:bg-[#9a85ff] transition-all duration-300"
+        >
+          Ver proyectos
+        </a>
+
+        <a
+          href="#about"
+          class="px-6 py-3 rounded-full border border-[#7b5cff]/50 text-[#9a85ff] hover:bg-[#7b5cff]/10 transition-all duration-300"
+        >
+          Sobre mí
+        </a>
+      </div>
+    </div>
+
+    <!-- Texto tipo consola en esquina -->
+    <div class="absolute bottom-8 left-8 text-xs text-[#7b5cff]/60 font-mono">
+      &gt; system: ready_
+      <span class="animate-pulse text-[#9a85ff]">|</span>
+    </div>
+  </section>
+  <About />
+  <Projects />
+  <Contact />
 </Layout>
